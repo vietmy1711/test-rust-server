@@ -8,7 +8,7 @@ async fn main() -> std::io::Result<()> {
         .await
 }
 
-#[post("/branch-commit")]
+#[post("/commit_received")]
 async fn commit_received(commit_hash: String) -> impl Responder {
     HttpResponse::Ok().body(commit_hash)
 }
