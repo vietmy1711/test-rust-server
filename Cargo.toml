@@ -7,4 +7,3 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
-git2 = "0.17.1"
