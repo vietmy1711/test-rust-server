@@ -10,5 +10,6 @@ async fn main() -> std::io::Result<()> {
 
 #[post("/commit_received")]
 async fn commit_received(commit_hash: String) -> impl Responder {
+    println!("A commit was pushed: {}", commit_hash);
     HttpResponse::Ok().body(commit_hash)
 }
